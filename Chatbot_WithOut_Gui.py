@@ -164,6 +164,8 @@ def chatbot_response(text):
 print("Ask chatbot about routine:"+"/n")
 while True:
     msg = input()
-    print(chatbot_response(msg))
-    if msg == "end":
+    if msg.lower() == "end":
         break
+    else:
+        print(chatbot_response(msg))
+    
